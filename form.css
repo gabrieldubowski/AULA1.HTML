@@ -1,1 +1,169 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e6f0f0;
+  margin: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.form-box,
+.data-box {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  overflow: hidden;
+}
+
+.form-box {
+  border-left: 5px solid #00796b; 
+}
+
+.data-box {
+  border-left: 5px solid #ff6f61; /* coral */
+  overflow-x: auto;
+}
+
+h2 {
+  margin-top: 0;
+  color: #00796b;
+}
+
+.data-box h2 {
+  color: #ff6f61;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00796b;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+
+button[type="reset"] {
+  background-color: #ff6f61;
+}
+
+button[type="submit"] {
+  background-color: #00796b;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: auto;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+th {
+  background-color: #00796b;
+  color: white;
+}
+.data-box table {
+  width: 100%; 
+  font-size: 14px; 
+}
+
+.data-box th,
+.data-box td {
+  padding: 8px 12px; 
+  word-break: break-word;
+}
+
+.data-box th {
+  font-weight: bold;
+}
+.data-box td, .data-box th {
+  min-width: 80px;
+}
+button.btn-editar {
+  background-color: #ffb74d; /* laranja claro */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+button.btn-editar:hover {
+  background-color: #ffa726;
+}
+
+button.btn-excluir {
+  background-color: #e64a19; 
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button.btn-excluir:hover {
+  background-color: #bf360c;
+}
 
